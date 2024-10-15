@@ -36,7 +36,7 @@ cl[CLIENTE] {
 }
 
 f[FUNCIONARIO] {
-    int id_cliente pk
+    int id_funcionario pk
     varchar(40) nome
     varchar(11) cpf
     varchar(70) email

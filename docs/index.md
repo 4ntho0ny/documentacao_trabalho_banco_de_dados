@@ -147,7 +147,7 @@ create table Pagamento(
     metodo_pagamento enum('debito', 'credito', 'boleto', 'pix', 'dinheiro') 
 ); 
 
-create table Endereco (
+create table Endereco(
     id_endereco int primary key auto_increment, 
     rua varchar(50) not null, 
     numero int not null, 

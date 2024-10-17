@@ -25,6 +25,7 @@ ca[CARRO] {
 
 cl[CLIENTE] {
     int id_cliente pk
+    int id_endereco fk
     varchar(40) nome
     varchar(11) cpf
     varchar(70) email
@@ -37,6 +38,7 @@ cl[CLIENTE] {
 
 f[FUNCIONARIO] {
     int id_funcionario pk
+    int id_endereco fk
     varchar(40) nome
     varchar(11) cpf
     varchar(70) email
@@ -61,6 +63,17 @@ p[PAGAMENTO] {
     int id_pagamento pk
     decimal valor_total "decimal(11,2)"
     enum metodo_pagamento "enum('debito', 'credito', 'boleto', 'pix', 'dinheiro')"
+}
+
+e[ENDERECO] {
+    int id_endereco pk 
+    varchar(50) rua 
+    int numero
+    varchar(50) bairro
+    varchar(8) cep
+    varchar(60) complemento
+    varchar(60) cidade
+    varchar(60) estado
 }
 
 r |o--|| ca : ocupar

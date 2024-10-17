@@ -80,6 +80,8 @@ r |o--|| ca : ocupar
 r |o--|| cl : solicitar
 r |o--|| f : fazer
 r ||--|| p : ter
+f ||--|| e : morar
+cl ||--|| e : morar
 ```
 
 ## Desenvolvimento do Banco de Dados

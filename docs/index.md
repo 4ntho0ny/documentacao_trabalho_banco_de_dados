@@ -193,4 +193,16 @@ INSERT INTO Reserva VALUES (default, 5, 1, 2, 3, '2024-10-01', '2024-10-10'),
 (default, 2, 3, 4, 5, '2024-12-12', '2024-12-20'),
 (default, 3, 4, 5, 1, '2024-10-20', '2024-10-30'),
 (default, 4, 5, 1, 2, '2024-10-25', '2024-11-05');
+
+SELECT 
+    Cliente.nome AS Nome_Cliente,
+    Funcionario.nome AS Nome_Funcionario,
+    Carro.modelo AS Modelo_Carro,
+    Pagamento.valor_total AS Valor_Pagamento
+FROM 
+    Reserva
+INNER JOIN Cliente ON Reserva.id_cliente = Cliente.id_cliente
+INNER JOIN Funcionario ON Reserva.id_funcionario = Funcionario.id_funcionario
+INNER JOIN Carro ON Reserva.id_carro = Carro.id_carro
+INNER JOIN Pagamento ON Reserva.id_pagamento = Pagamento.id_pagamento;
 ```

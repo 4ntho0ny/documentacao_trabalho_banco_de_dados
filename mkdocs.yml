@@ -1,4 +1,5 @@
 site_name: Locadora de Veículos
+site_url: https://www.locadoradeveiculos.com.br
 
 theme:
   logo: assets/logo.png

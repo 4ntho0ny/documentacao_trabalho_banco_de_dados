@@ -1,4 +1,4 @@
-#!/home/anthony/workstation/trabalho_bd/venv/bin/python3
+#!/home/anthony/workstation/documentacao_trabalho_banco_de_dados/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
